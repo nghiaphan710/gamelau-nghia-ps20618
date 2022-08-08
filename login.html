@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    *{
+        margin: 0 auto;
+        padding: 0;
+        font-family: serif;
+    }
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(img/background.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: block;
+    }
+    .container{
+        margin-top: 50px;
+        border: 1px solid white;
+        background-color: white;
+        box-shadow: 5px 5px 10px black;
+        width: 300px;
+        height: 320px;
+        border-radius: 5px;
+        padding-left: 10px;
+        transform: translateY(50%);
+    }
+    h3{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 30px;
+        color: black;
+        text-shadow: 0 2px 3px #009688;
+    }
+
+    .formLogin{
+        padding-top: 20px;
+        font-weight: bold;
+    }
+
+    .user{
+        padding-bottom: 20px;
+    }
+
+    .pass{
+        padding-bottom: 20px;
+    }
+
+    .btnLogin{
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    button.lgin{
+        height: 30px;
+        width: 120px;
+        border-radius: 0px;
+        font-weight: bold;
+        color: black;
+        border: 1px solid black;
+        background-color: #009688;
+    }
+
+    button.lgin:hover{
+        height: 30px;
+        width: 120px;
+        border-radius: 0px;
+        font-weight: bold;
+        color: black;
+        background-color: aquamarine;
+        cursor: pointer;
+    }
+
+    button.register{
+        height: 30px;
+        width: 120px;
+        border-radius: 0px;
+        font-weight: bold;
+        border: 1px solid black;
+        color: black;
+        background-color: #009688;
+    }
+
+    button.register:hover{
+        height: 30px;
+        width: 120px;
+        border-radius: 0px;
+        font-weight: bold;
+        color: black;
+        background-color: aquamarine;
+        cursor: pointer;
+    }
+
+    input.emailForm{
+        width: 90%;
+        height: 20px;
+        border: 1px solid black;
+        margin-top: 6px;
+    }
+
+    input.emailForm:hover{
+        width: 90%;
+        height: 20px;
+        border: 1px solid red;
+        margin-top: 6px;
+    }
+
+    input.passForm{
+        width: 90%;
+        height: 20px;
+        border: 1px solid black;
+        margin-top: 6px;
+    }
+
+    input.passForm:hover{
+        width: 90%;
+        height: 20px;
+        border: 1px solid red;
+        margin-top: 6px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h3>Đăng Nhập</h3>
+        <hr>
+        <div class="formLogin">
+            <div class="user">
+                <p>Email<br></p>
+                <input type="email" name= "email_login" class="emailForm" title="Nhập vào emai" placeholder="Nhập email">
+            </div>
+            <div class="pass">
+                <p>Mật khẩu</p>
+                <input type="password" name = "password_login" class="passForm" title="Nhập vào mật khẩu" placeholder="Nhập mật khẩu">
+            </div>
+            <div class="remember">
+                <input type="checkbox"> Remember me?
+            </div>
+            <div class="btnLogin">
+                <a href="index.html"><button type="button" class="lgin">Đăng nhập</button></a>
+                <a href="register.html"><button type="button" class="register">Đăng ký</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

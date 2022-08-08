@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrangChu</title>
+    <link rel="stylesheet" href="asm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="fStart();">
+    <div class="container">
+        <div class="headerFrom">
+            <header>
+                <nav>
+                    <!-- <a href=""><img src="img/TNCUTE_logo.png" class="logo"></a> -->
+                    <a href=""><p class="logo">TN CUTE</p></a>
+                    <label for="checkMenu" class="menuIcon">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>      
+                    <input type="checkbox" id="checkMenu">
+                    <ul class="menu">
+                        <li class="active"><a href="asm.html">Page</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Event</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="slide-show">
+            <div class="item_img">
+                <i class="fa-solid fa-angle-right btnRight" onclick="fNext();"></i>
+                <i class="fa-solid fa-angle-left btnLeft" onclick="fBack();"></i>
+                <img src="item/gta_slide.jpg" id="mySlide">
+            </div>
+        </div>
+        <div class="mainFrom">
+            <div class="contentMain">
+                <h3>SẢN PHẨM</h3>
+                <article>
+                    <div class="item">
+                        <a href="infor.html"><img src="item/pacifyi_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>PACIFY</p>
+                    </div>
+                    <div class="price">
+
+                        <p>69.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="infor-assasin.html"><img src="item/assasincreed_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Assassin's Creed® Origins - Gold Edition</p>
+                    </div>
+                    <div class="price">
+                        <p>1.405.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="infor_gtaV.html"><img src="item/gtaV_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Grand Theft Auto V - GTA V</p>
+                    </div>
+                    <div class="price">
+                        <p>456.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="item_dontstarve.html"><img src="item/DontStarveTogether_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Don't Starve Together</p>
+                    </div>
+                    <div class="price">
+                        <p>163.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="infor_l4d2.html"><img src="item/l4d2_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Left 4 Dead 2</p>
+                    </div>
+                    <div class="price">
+                        <p>118.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="infor_elder_ring.html"><img src="item/elderring_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Elden Ring</p>
+                    </div>
+                    <div class="price">
+                        <p>790.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/7daytodie_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>7 Days to Die</p>
+                    </div>
+                    <div class="price">
+                        <p>219.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/tomclancy_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Tom Clancy's Ghost Recon® Wildlands</p>
+                    </div>
+                    <div class="price">
+                        <p>824.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/rust_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Rust</p>
+                    </div>
+                    <div class="price">
+                        <p>510.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/subnautica_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Subnautica</p>
+                    </div>
+                    <div class="price">
+                        <p>250.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/plantsvszome_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Plants vs. Zombies GOTY Edition</p>
+                    </div>
+                    <div class="price">
+                        <p>17.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/witcher_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>The Witcher: Enhanced Edition Director's Cut</p>
+                    </div>
+                    <div class="price">
+                        <p>120.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/sao_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Sword Art Online: Fatal Bullet</p>
+                    </div>
+                    <div class="price">
+                        <p>605.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/saoRE_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Sword Art Online Re: Hollow Fragment</p>
+                    </div>
+                    <div class="price">
+                        <p>188.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/thesilentage_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>The Silent Age</p>
+                    </div>
+                    <div class="price">
+                        <p>120.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/catherine_iten.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Catherine Classic</p>
+                    </div>
+                    <div class="price">
+                        <p>342.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/titanfall2_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>Titanfall® 2 : Ultimate Edition ( Steam )</p>
+                    </div>
+                    <div class="price">
+                        <p>700.000đ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <a href="#"><img src="item/dragonball_item.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <p>DRAGON BALL FIGHTERZ - Cooler</p>
+                    </div>
+                    <div class="price">
+                        <p>109.000đ</p>
+                    </div>
+                </article>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="footerForm">
+        <footer>
+            <p>Bản quyền thuộc @Nncute.gmail.com</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+<script src="asm.js"></script>

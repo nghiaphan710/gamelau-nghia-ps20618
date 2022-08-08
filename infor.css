@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    max-height: 100%;
+}
+header{
+    width: auto;
+    height: auto;
+    background-color: #1C1C28;
+    margin-bottom: 10px;
+}
+
+.logo{
+    height: 200px;
+    text-align: center;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+header .menu{
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+    float: right;
+    margin-right: 50px;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 55px;
+    position: relative;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #FF6600;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.25s;
+}
+
+.menu ul li a:hover::after{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.mainForm .product img{
+    height: 250px;
+    width: 500px;
+    float: left;
+}
+
+.thongTin{
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    transform: translateX(4%);
+    padding: 20px;
+}
+
+.thongTin .name{
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.thongTin .price{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.thongTin input{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tlGame{
+    padding-bottom: 30px;
+}
+
+hr{
+    width: 40%;
+}
+
+.buySp button{
+    margin-top: 20px;
+    width: 20%;
+    height: 40px;
+    transform: translateX(40%);
+    background-color: #009688;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.buySp button:hover{
+    margin-top: 20px;
+    width: 20%;
+    height: 40px;
+    transform: translateX(40%);
+    background-color: aquamarine;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+
